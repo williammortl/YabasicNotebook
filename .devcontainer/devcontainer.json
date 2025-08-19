@@ -1,0 +1,18 @@
+{
+  "name": "yabasic-notebook-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "forwardPorts": [8888],
+  "postCreateCommand": "pip install --upgrade pip && pip install jupyter notebook ipykernel && python3 -m ipykernel install --user"
+}
+I get this 
