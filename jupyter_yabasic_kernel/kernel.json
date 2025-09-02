@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python3",
+    "-m",
+    "jupyter_yabasic_kernel.jupyter_yabasic_kernel",
+    "-f",
+    "{connection_file}"
+  ],
+  "display_name": "Yabasic",
+  "language": "basic"
+}
