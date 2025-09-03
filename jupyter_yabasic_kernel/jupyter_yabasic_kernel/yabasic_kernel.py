@@ -23,29 +23,6 @@ class YabasicKernel(Kernel):
     banner = "Yabasic kernel - run BASIC code via yabasic interpreter"
 
     def do_execute(self, code, silent, store_history=True, user_expressions=None, allow_stdin=False):
-        
-        # Inject custom CSS for Yabasic kernel (only once per session)
-        if not hasattr(self, '_yabasic_css_injected'):
-            css = """
-            <style>
-            .code_cell .input_area {
-                background: #003366 !important;
-                color: #fff !important;
-            }
-            .code_cell .input_area textarea {
-                color: #fff !important;
-            }
-            </style>
-            """
-            self.send_response(
-                self.iopub_socket,
-                'display_data',
-                {
-                    'data': {'text/html': css},
-                    'metadata': {}
-                }
-            )
-            self._yabasic_css_injected = True
 
         # Try to ensure cell IDs are present if nbformat is available
         try:
