@@ -5,6 +5,8 @@ Learning how to program in [BASIC](https://en.wikipedia.org/wiki/BASIC) used to 
 
 Included in the **examples** directory are a couple simple programs.
 
+Link: [YaBasic Github repository](https://github.com/marcIhm/yabasic)
+
 ## Requirements
 Make sure to have the following packages installed:
 
