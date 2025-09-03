@@ -4,7 +4,7 @@ A Jupyter notebook kernel for Yabasic by William M Mortl
 ## Requirements
 Make sure to have the following packages installed
 
-1. [https://2484.de/yabasic/](YaBasic)
+1. [YaBasic](https://2484.de/yabasic/)
 1. python3-pip
 1. python3-notebook
 1. python3-venv
